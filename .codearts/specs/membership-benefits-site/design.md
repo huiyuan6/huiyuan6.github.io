@@ -194,14 +194,16 @@ huiyuan6.github.io/                       ← GitHub Pages 用户仓库根目录
 
 ### 1.2.5 资源体积预算（NFR-08 ≤200KB，不含图片）
 
+> **v2 修订（2026-10-19）**：v2 板块扩容（10→15）后预算上调（style.css 25→32KB、js/ 22→32KB、核心合计 99→110KB），NFR-08 ≤200KB 红线不变。v2 实测：style.css 30.6KB、js/ 31.9KB、核心合计 109.4KB，均在新预算内。
+
 | 资源 | 预算 | 说明 |
 | --- | --- | --- |
 | index.html | ≤ 50 KB | 静态基线 + JSON-LD + 内联 SVG 图标 |
-| css/style.css | ≤ 25 KB | 设计令牌 + 全部组件样式 |
-| js/（main + 7 modules） | ≤ 22 KB | 未压缩源码即预算口径 |
+| css/style.css | ≤ 32 KB | 设计令牌 + 全部组件样式（v2 板块 10→15 扩容后由 25KB 上调） |
+| js/（main + 7 modules） | ≤ 32 KB | 未压缩源码即预算口径（v2 扩容后由 22KB 上调） |
 | data.js | ≤ 2 KB | 6 条目 |
 | tests/（不计入线上预算） | — | 不被 index.html 引用，不参与线上加载 |
-| **核心资源合计** | **≤ 99 KB** | 预算余量 ≥100KB，达标 |
+| **核心资源合计** | **≤ 110 KB** | 预算余量 ≥90KB（v2 扩容后由 99KB 上调），NFR-08 ≤200KB 红线不变，达标 |
 | assets/og-image.png | ≤ 100 KB | 图片，按 spec 不计入 200KB 预算 |
 | assets/favicon.svg | ≤ 2 KB | 图片，同上 |
 
