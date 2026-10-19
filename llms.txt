@@ -1,0 +1,25 @@
+# 会员权益（HuiYuan）
+
+> 会员权益聚合导航官网：收录视频、音乐、网盘、社交媒体、流量话费等数字会员权益优惠，提供分类导航、热门套餐推荐与合作站点入口。
+
+站点地址: https://huiyuan6.github.io/
+语言: 简体中文
+
+## 核心板块
+- 权益分类: https://huiyuan6.github.io/#categories — 视频/音乐/网盘/社媒/流量话费/组合套餐六大分类
+- 合作站点: https://huiyuan6.github.io/#partners — 经人工核验的站群合作站点清单
+- 热门权益: https://huiyuan6.github.io/#hot — 追剧/听歌/办公云盘/社媒经营等推荐套餐
+- 使用步骤: https://huiyuan6.github.io/#steps — 四步完成权益开通
+- 常见问题: https://huiyuan6.github.io/#faq — 站点定位、优惠、收录标准、支付售后等问答
+
+## 合作站点
+- 运来网络: https://wcbblll.99kami.com — 视频/音乐/网盘等权益
+- 好运权益: https://wcbblll.im01.cn — 视频/音乐/网盘等权益
+- 福来流量站: http://35568.qcxmt.cn — 粉丝/关注/点赞/阅读服务
+- 券宝: https://jdjdndn.github.io/ — 优惠券领取与省钱攻略
+- 聚合优惠: https://wcbblll.cc — 全网优惠信息聚合导航
+- 号卡: https://dlhaoka.com — 大流量手机号卡在线办理
+
+## 说明
+- 本站为纯导航站点：商品浏览、下单、支付与售后均在合作站点完成。
+- 维护方式：合作站点清单由 data.js 数据文件驱动，增删条目后站点自动同步。

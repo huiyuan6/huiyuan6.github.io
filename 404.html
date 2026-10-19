@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>页面未找到｜会员权益</title>
+  <meta name="description" content="您访问的页面不存在，可返回会员权益首页继续浏览权益分类、热门套餐与合作站点。">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://huiyuan6.github.io/404.html">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f8fafc">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0b1120">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <!-- 主题引导：与 index.html 一致，防 FOUC（无 JS 时默认亮色） -->
+  <script>
+    (function () {
+      var theme = 'light';
+      try {
+        var stored = localStorage.getItem('hy-theme');
+        if (stored === 'light' || stored === 'dark') {
+          theme = stored;
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          theme = 'dark';
+        }
+      } catch (e) { /* localStorage 不可用时默认亮色 */ }
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main id="main" class="error-page">
+    <div class="container error-page__inner">
+      <p class="error-page__code" aria-hidden="true">404</p>
+      <h1 class="error-page__title">页面未找到</h1>
+      <p class="error-page__desc">您访问的页面不存在或已被移动，可以返回首页继续浏览权益分类、热门套餐与合作站点。</p>
+      <p class="error-page__cta">
+        <a class="btn btn--primary" href="https://huiyuan6.github.io/">返回首页</a>
+      </p>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>单元测试 · 会员权益官网</title>
+<style>
+  :root { --pass: #0a7d33; --fail: #b3261e; --line: #e3e6ea; }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 24px; font: 15px/1.6 "Microsoft YaHei", system-ui, sans-serif; color: #1f2328; background: #f6f8fa; }
+  .panel { max-width: 880px; margin: 0 auto; background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 20px 24px; }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  .sub { color: #57606a; font-size: 13px; margin: 0 0 16px; }
+  .summary { font-size: 16px; font-weight: 600; padding: 10px 14px; border-radius: 6px; margin-bottom: 16px; }
+  .summary.ok { background: #e6f4ea; color: var(--pass); }
+  .summary.bad { background: #fdebec; color: var(--fail); }
+  .group { font-weight: 600; margin: 18px 0 6px; padding-top: 10px; border-top: 1px dashed var(--line); }
+  .case { font: 13px/1.5 Consolas, monospace; padding: 2px 0 2px 18px; position: relative; color: #33383e; }
+  .case::before { content: "✓"; position: absolute; left: 0; color: var(--pass); }
+  .case.fail { color: var(--fail); }
+  .case.fail::before { content: "✗"; color: var(--fail); }
+  .case .msg { display: block; padding-left: 18px; color: var(--fail); white-space: pre-wrap; }
+  code { background: #f0f2f5; padding: 1px 5px; border-radius: 4px; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="panel">
+  <h1>单元测试 · 会员权益官网（会员站群）</h1>
+  <p class="sub">主路径：浏览器直接运行（file:// 双击即可）· 辅路径：<code>node tests/run-node.js</code></p>
+  <div id="summary" class="summary">运行中……</div>
+  <div id="results"></div>
+</div>
+
+<!-- 被测源码（加载顺序与 index.html 一致：merge 先于 render，保证 HY.mergeLinkLists 就绪） -->
+<script src="../data.js"></script>
+<script src="../js/modules/validate.js"></script>
+<script src="../js/modules/merge.js"></script>
+<script src="../js/modules/render.js"></script>
+<script src="../js/modules/theme.js"></script>
+<script src="../js/modules/accordion.js"></script>
+<script src="../js/modules/reveal.js"></script>
+<script src="../js/modules/nav.js"></script>
+<script src="../js/main.js"></script>
+
+<!-- 测试框架与用例 -->
+<script src="assertions.js"></script>
+<script src="run-tests.js"></script>
+<script>
+(function () {
+  'use strict';
+  var resultsEl = document.getElementById('results');
+  var summaryEl = document.getElementById('summary');
+
+  /* DOM 渲染 reporter：分组头 + 逐条红绿 + 汇总 */
+  TestKit.setReporter(function (type, payload) {
+    var el;
+    if (type === 'group') {
+      el = document.createElement('div');
+      el.className = 'group';
+      el.textContent = payload;
+      resultsEl.appendChild(el);
+    } else if (type === 'pass') {
+      el = document.createElement('div');
+      el.className = 'case';
+      el.textContent = payload.name;
+      resultsEl.appendChild(el);
+    } else if (type === 'fail') {
+      el = document.createElement('div');
+      el.className = 'case fail';
+      el.textContent = payload.name;
+      var msg = document.createElement('span');
+      msg.className = 'msg';
+      msg.textContent = payload.message;
+      el.appendChild(msg);
+      resultsEl.appendChild(el);
+    } else if (type === 'summary') {
+      summaryEl.textContent = payload.fail === 0
+        ? '✓ 全部通过：' + payload.pass + ' / ' + payload.total + ' 条用例'
+        : '✗ 存在失败：通过 ' + payload.pass + ' / ' + payload.total + '（失败 ' + payload.fail + '）';
+      summaryEl.className = 'summary ' + (payload.fail === 0 ? 'ok' : 'bad');
+      document.title = (payload.fail === 0 ? '✓ ' : '✗ ') + payload.pass + '/' + payload.total + ' · 单元测试';
+    }
+  });
+
+  /* 浏览器路径：全部模块经 UMD-lite 注册到 window.HY 扁平命名空间 */
+  HY_TEST_SUITE.runSuite({
+    TestKit: TestKit,
+    HY: window.HY,
+    data: window.MEMBER_SITE_DATA,
+    validate: window.HY,
+    merge: window.HY,
+    render: window.HY,
+    theme: window.HY,
+    accordion: window.HY,
+    reveal: window.HY,
+    nav: window.HY,
+    main: window.HY
+  });
+
+  TestKit.reportSummary();
+})();
+</script>
+</body>
+</html>

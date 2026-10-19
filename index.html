@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>会员权益｜视频·音乐·网盘等会员优惠聚合导航</title>
+  <meta name="description" content="会员权益（HuiYuan）聚合导航官网：收录视频会员、音乐会员、网盘扩容、社交媒体服务、流量话费等数字权益优惠，提供权益分类、热门套餐推荐与合作站点入口，一站式找到适合你的会员优惠。">
+  <meta name="keywords" content="会员权益,会员优惠,视频会员,音乐会员,网盘扩容,流量话费,会员套餐,优惠导航">
+  <meta name="author" content="会员权益">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://huiyuan6.github.io/">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f8fafc">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0b1120">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <!-- Open Graph（NFR-03） -->
+  <meta property="og:site_name" content="会员权益">
+  <meta property="og:title" content="会员权益｜视频·音乐·网盘等会员优惠聚合导航">
+  <meta property="og:description" content="视频、音乐、网盘、社媒、流量话费等数字权益优惠聚合导航，一站式找到适合你的会员优惠。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://huiyuan6.github.io/">
+  <meta property="og:image" content="https://huiyuan6.github.io/assets/og-image.png">
+  <meta property="og:locale" content="zh_CN">
+  <!-- Twitter Card（NFR-03） -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="会员权益｜视频·音乐·网盘等会员优惠聚合导航">
+  <meta name="twitter:description" content="视频、音乐、网盘、社媒、流量话费等数字权益优惠聚合导航，一站式找到适合你的会员优惠。">
+  <meta name="twitter:image" content="https://huiyuan6.github.io/assets/og-image.png">
+  <!-- ① 主题引导：内联同步脚本，防 FOUC（D4）——读 localStorage，无记忆则跟随系统偏好 -->
+  <script>
+    (function () {
+      var theme = 'light';
+      try {
+        var stored = localStorage.getItem('hy-theme');
+        if (stored === 'light' || stored === 'dark') {
+          theme = stored;
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          theme = 'dark';
+        }
+      } catch (e) { /* localStorage 不可用时默认亮色 */ }
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- JSON-LD 结构化数据：四实体 @graph（NFR-04），FAQ 问答与 #faq 内 details 逐字一致 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://huiyuan6.github.io/#website",
+        "url": "https://huiyuan6.github.io/",
+        "name": "会员权益",
+        "alternateName": "HuiYuan",
+        "description": "会员权益聚合导航官网：视频、音乐、网盘、社媒、流量话费等数字权益优惠导航。",
+        "inLanguage": "zh-CN",
+        "publisher": { "@id": "https://huiyuan6.github.io/#organization" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://huiyuan6.github.io/#organization",
+        "name": "会员权益",
+        "url": "https://huiyuan6.github.io/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://huiyuan6.github.io/assets/og-image.png"
+        }
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://huiyuan6.github.io/#partners",
+        "name": "合作站点清单",
+        "numberOfItems": 6,
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "运来网络",   "url": "https://wcbblll.99kami.com" },
+          { "@type": "ListItem", "position": 2, "name": "好运权益",   "url": "https://wcbblll.im01.cn" },
+          { "@type": "ListItem", "position": 3, "name": "福来流量站", "url": "http://35568.qcxmt.cn" },
+          { "@type": "ListItem", "position": 4, "name": "券宝",       "url": "https://jdjdndn.github.io/" },
+          { "@type": "ListItem", "position": 5, "name": "聚合优惠",   "url": "https://wcbblll.cc" },
+          { "@type": "ListItem", "position": 6, "name": "号卡",       "url": "https://dlhaoka.com" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://huiyuan6.github.io/#faq",
+        "mainEntity": [
+          { "@type": "Question", "name": "会员权益站是做什么的？",
+            "acceptedAnswer": { "@type": "Answer", "text": "本站是会员权益聚合导航官网，收录视频、音乐、网盘、社交媒体、流量话费等数字权益优惠信息，帮助你快速找到合适的会员开通渠道。" } },
+          { "@type": "Question", "name": "通过本站开通会员有优惠吗？",
+            "acceptedAnswer": { "@type": "Answer", "text": "本站收录的合作站点会不定期提供会员优惠活动，具体折扣与活动规则以各站点页面展示为准。" } },
+          { "@type": "Question", "name": "如何选择适合自己的会员套餐？",
+            "acceptedAnswer": { "@type": "Answer", "text": "可先在权益分类中按需求浏览，再到热门权益查看推荐组合，最后对比合作站点的活动后前往开通。" } },
+          { "@type": "Question", "name": "合作站点是怎么收录的？",
+            "acceptedAnswer": { "@type": "Answer", "text": "合作站点经人工核验后收录，并定期复检可用性与内容相关性，保障链接质量。" } },
+          { "@type": "Question", "name": "支付与售后在哪里完成？",
+            "acceptedAnswer": { "@type": "Answer", "text": "本站仅提供导航入口，会员商品的浏览、下单、支付与售后均在对应合作站点完成。" } },
+          { "@type": "Question", "name": "遇到问题如何反馈？",
+            "acceptedAnswer": { "@type": "Answer", "text": "可通过合作站点内的客服渠道反馈，或通过本站底部友情链接访问相关站点获取帮助。" } }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- ② 数据与模块：defer 经典脚本，书写顺序即依赖顺序（1.2.4） -->
+  <script src="data.js" defer></script>
+  <script src="js/modules/validate.js" defer></script>
+  <script src="js/modules/merge.js" defer></script>
+  <script src="js/modules/render.js" defer></script>
+  <script src="js/modules/theme.js" defer></script>
+  <script src="js/modules/accordion.js" defer></script>
+  <script src="js/modules/reveal.js" defer></script>
+  <script src="js/modules/nav.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主内容</a>
+
+  <!-- ======================= 顶部导航（FR-01/02/03） ======================= -->
+  <header class="site-header" id="top">
+    <div class="container site-header__inner">
+      <nav class="site-nav" id="site-nav" aria-label="主导航">
+        <a class="brand" href="#top">
+          <svg class="brand__mark" width="28" height="28" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="brand-grad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#4F46E5"/><stop offset="1" stop-color="#7C3AED"/>
+              </linearGradient>
+            </defs>
+            <rect width="64" height="64" rx="14" fill="url(#brand-grad)"/>
+            <text x="32" y="43" font-size="34" font-weight="600" fill="#ffffff" text-anchor="middle" font-family="system-ui,'PingFang SC','Microsoft YaHei',sans-serif">会</text>
+          </svg>
+          <span class="brand__name">会员权益</span>
+        </a>
+        <button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav-links" aria-label="打开导航菜单">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true" focusable="false">
+            <path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/>
+          </svg>
+        </button>
+        <ul class="site-nav__links" id="site-nav-links">
+          <li><a href="#categories">权益分类</a></li>
+          <li><a href="#partners">合作站点</a></li>
+          <li><a href="#hot">热门权益</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="切换到暗色主题">
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="M4.9 4.9l1.4 1.4"/><path d="M17.7 17.7l1.4 1.4"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="M4.9 19.1l1.4-1.4"/><path d="M17.7 6.3l1.4-1.4"/>
+          </svg>
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ======================= Hero（FR-04） ======================= -->
+    <section class="hero" id="hero" tabindex="-1" aria-labelledby="hero-title">
+      <div class="hero__visual" aria-hidden="true">
+        <span class="hero__blob hero__blob--a"></span>
+        <span class="hero__blob hero__blob--b"></span>
+      </div>
+      <div class="container hero__inner">
+        <h1 class="hero__title" id="hero-title">一站式会员权益聚合导航</h1>
+        <p class="hero__sub">视频、音乐、网盘、社媒、流量话费——把值得开的会员，一次找齐。</p>
+        <p class="hero__cta">
+          <a class="btn btn--primary" href="#categories">浏览权益分类</a>
+          <a class="btn btn--ghost" href="#partners">查看合作站点</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ======================= 数据统计（FR-05） ======================= -->
+    <section class="stats" id="stats" tabindex="-1" aria-labelledby="stats-title">
+      <div class="container">
+        <h2 class="visually-hidden" id="stats-title">数据统计</h2>
+        <ul class="stats-grid" data-reveal>
+          <li class="stat-item">
+            <p class="stat-item__value" id="stat-sites" data-stat="sites">6</p>
+            <p class="stat-item__label">合作站点</p>
+          </li>
+          <li class="stat-item">
+            <p class="stat-item__value" id="stat-categories" data-stat="categories">6</p>
+            <p class="stat-item__label">权益分类</p>
+          </li>
+          <li class="stat-item">
+            <p class="stat-item__value" id="stat-packages" data-stat="packages">4</p>
+            <p class="stat-item__label">热门套餐</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ======================= 权益分类（FR-06） ======================= -->
+    <section class="categories" id="categories" tabindex="-1" aria-labelledby="categories-title">
+      <div class="container">
+        <h2 id="categories-title">权益分类</h2>
+        <p class="section-lead">六大数字权益分类，覆盖影音娱乐、存储办公与社媒运营等常见需求。</p>
+        <ul class="category-grid" data-reveal>
+          <li class="category-card">
+            <span class="category-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10.5 9.5l5 2.5-5 2.5z" fill="currentColor" stroke="none"/></svg>
+            </span>
+            <h3 class="category-card__title">视频会员</h3>
+            <p class="category-card__desc">主流视频平台会员优惠，热门剧集综艺畅快看。</p>
+            <a class="category-card__link" href="#hot">查看推荐套餐</a>
+          </li>
+          <li class="category-card">
+            <span class="category-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M9 18V6l10-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="16.5" cy="16" r="2.5"/></svg>
+            </span>
+            <h3 class="category-card__title">音乐会员</h3>
+            <p class="category-card__desc">音乐平台会员特惠，无损音质与会员曲库随心听。</p>
+            <a class="category-card__link" href="#hot">查看推荐套餐</a>
+          </li>
+          <li class="category-card">
+            <span class="category-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M7 18a4.5 4.5 0 1 1 .9-8.9A6 6 0 0 1 19.5 11 3.5 3.5 0 0 1 19 18z"/><path d="M12 13v5"/><path d="M9.8 15.2L12 13l2.2 2.2"/></svg>
+            </span>
+            <h3 class="category-card__title">网盘·存储</h3>
+            <p class="category-card__desc">网盘扩容与备份方案，重要资料安全存放心不慌。</p>
+            <a class="category-card__link" href="#hot">查看推荐套餐</a>
+          </li>
+          <li class="category-card">
+            <span class="category-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><circle cx="9" cy="8" r="3.5"/><path d="M3.5 20a5.5 5.5 0 0 1 11 0"/><path d="M16 5.2a3.5 3.5 0 0 1 0 5.6"/><path d="M17.6 14.6a5.5 5.5 0 0 1 2.9 4.9"/></svg>
+            </span>
+            <h3 class="category-card__title">社交媒体服务</h3>
+            <p class="category-card__desc">社媒数据与推广服务，助力内容运营稳步成长。</p>
+            <a class="category-card__link" href="#partners">前往合作站点</a>
+          </li>
+          <li class="category-card">
+            <span class="category-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="7" y="3" width="10" height="18" rx="2.5"/><path d="M10.5 17.5h3"/><path d="M8.5 7.5h7"/><path d="M8.5 10.5h4"/></svg>
+            </span>
+            <h3 class="category-card__title">流量话费</h3>
+            <p class="category-card__desc">大流量号卡与话费优惠，日常上网通讯更省心。</p>
+            <a class="category-card__link" href="#partners">前往合作站点</a>
+          </li>
+          <li class="category-card">
+            <span class="category-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/><path d="M3 17.5l9 5 9-5"/></svg>
+            </span>
+            <h3 class="category-card__title">组合套餐</h3>
+            <p class="category-card__desc">多平台权益组合搭配，一站式开通性价比更高。</p>
+            <a class="category-card__link" href="#partners">前往合作站点</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ======================= 合作站点（FR-07/15，数据驱动锚点） ======================= -->
+    <section class="partners" id="partners" tabindex="-1" aria-labelledby="partners-title">
+      <div class="container">
+        <h2 id="partners-title">合作站点</h2>
+        <p class="section-lead">合作站点经人工核验后收录，并定期复检可用性与内容相关性；点击卡片可在新标签页直达对应站点。</p>
+        <ul id="partner-list" class="partner-grid" data-render="partner-cards" data-reveal>
+          <li class="partner-card">
+            <span class="partner-card__avatar" aria-hidden="true">运</span>
+            <h3 class="partner-card__name">运来网络</h3>
+            <p class="partner-card__desc">视频/音乐/网盘等权益</p>
+            <a class="partner-card__link" href="https://wcbblll.99kami.com" target="_blank" rel="noopener noreferrer">访问站点</a>
+          </li>
+          <li class="partner-card">
+            <span class="partner-card__avatar" aria-hidden="true">好</span>
+            <h3 class="partner-card__name">好运权益</h3>
+            <p class="partner-card__desc">视频/音乐/网盘等权益</p>
+            <a class="partner-card__link" href="https://wcbblll.im01.cn" target="_blank" rel="noopener noreferrer">访问站点</a>
+          </li>
+          <li class="partner-card">
+            <span class="partner-card__avatar" aria-hidden="true">福</span>
+            <h3 class="partner-card__name">福来流量站</h3>
+            <p class="partner-card__desc">粉丝/关注/点赞/阅读服务</p>
+            <a class="partner-card__link" href="http://35568.qcxmt.cn" target="_blank" rel="noopener noreferrer">访问站点</a>
+          </li>
+          <li class="partner-card">
+            <span class="partner-card__avatar" aria-hidden="true">券</span>
+            <h3 class="partner-card__name">券宝</h3>
+            <p class="partner-card__desc">优惠券领取与省钱攻略</p>
+            <a class="partner-card__link" href="https://jdjdndn.github.io/" target="_blank" rel="noopener noreferrer">访问站点</a>
+          </li>
+          <li class="partner-card">
+            <span class="partner-card__avatar" aria-hidden="true">聚</span>
+            <h3 class="partner-card__name">聚合优惠</h3>
+            <p class="partner-card__desc">全网优惠信息聚合导航</p>
+            <a class="partner-card__link" href="https://wcbblll.cc" target="_blank" rel="noopener noreferrer">访问站点</a>
+          </li>
+          <li class="partner-card">
+            <span class="partner-card__avatar" aria-hidden="true">号</span>
+            <h3 class="partner-card__name">号卡</h3>
+            <p class="partner-card__desc">大流量手机号卡在线办理</p>
+            <a class="partner-card__link" href="https://dlhaoka.com" target="_blank" rel="noopener noreferrer">访问站点</a>
+          </li>
+        </ul>
+        <noscript>
+          <p class="partners-note">当前浏览器未启用 JavaScript，以上合作站点清单以静态方式完整展示，与 data.js 数据一致，可直接点击访问。</p>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- ======================= 使用步骤（FR-08） ======================= -->
+    <section class="steps" id="steps" tabindex="-1" aria-labelledby="steps-title">
+      <div class="container">
+        <h2 id="steps-title">使用步骤</h2>
+        <p class="section-lead">从浏览到开通，四步完成会员权益领取。</p>
+        <ol class="steps" data-reveal>
+          <li class="step-item">
+            <span class="step-item__no" aria-hidden="true">01</span>
+            <h3 class="step-item__title">浏览权益分类</h3>
+            <p class="step-item__desc">按需求浏览六大权益分类，快速定位你感兴趣的会员类型。</p>
+          </li>
+          <li class="step-item">
+            <span class="step-item__no" aria-hidden="true">02</span>
+            <h3 class="step-item__title">挑选热门套餐</h3>
+            <p class="step-item__desc">查看追剧、听歌、办公云盘等推荐组合，找到适合你的搭配。</p>
+          </li>
+          <li class="step-item">
+            <span class="step-item__no" aria-hidden="true">03</span>
+            <h3 class="step-item__title">前往合作站点</h3>
+            <p class="step-item__desc">点击合作站点卡片，在新标签页直达对应站点官网。</p>
+          </li>
+          <li class="step-item">
+            <span class="step-item__no" aria-hidden="true">04</span>
+            <h3 class="step-item__title">开通享受权益</h3>
+            <p class="step-item__desc">在合作站点完成下单开通，即刻享受会员权益。</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ======================= 热门权益（FR-09） ======================= -->
+    <section class="hot" id="hot" tabindex="-1" aria-labelledby="hot-title">
+      <div class="container">
+        <h2 id="hot-title">热门权益</h2>
+        <p class="section-lead">按使用场景搭配的推荐组合，覆盖追剧、听歌、办公与社媒经营。</p>
+        <ul class="hot-grid" data-reveal>
+          <li class="hot-card">
+            <h3 class="hot-card__title">追剧套餐</h3>
+            <p class="hot-card__scene">适用场景：重度追剧、全家共用大屏观看。</p>
+            <ul class="hot-card__list">
+              <li>主流视频平台会员优惠</li>
+              <li>可搭配大流量号卡，外出追剧不卡顿</li>
+            </ul>
+            <a class="hot-card__link" href="#partners">前往合作站点开通</a>
+          </li>
+          <li class="hot-card">
+            <h3 class="hot-card__title">听歌套餐</h3>
+            <p class="hot-card__scene">适用场景：通勤听歌、无损音质爱好者。</p>
+            <ul class="hot-card__list">
+              <li>音乐平台会员特惠</li>
+              <li>可叠加流量包，随时随地畅听</li>
+            </ul>
+            <a class="hot-card__link" href="#partners">前往合作站点开通</a>
+          </li>
+          <li class="hot-card">
+            <h3 class="hot-card__title">办公云盘套餐</h3>
+            <p class="hot-card__scene">适用场景：资料归档、团队协作与备份。</p>
+            <ul class="hot-card__list">
+              <li>网盘扩容空间优惠</li>
+              <li>多端同步，重要文件安心备份</li>
+            </ul>
+            <a class="hot-card__link" href="#partners">前往合作站点开通</a>
+          </li>
+          <li class="hot-card">
+            <h3 class="hot-card__title">社媒经营套餐</h3>
+            <p class="hot-card__scene">适用场景：自媒体运营、账号成长期。</p>
+            <ul class="hot-card__list">
+              <li>社媒服务组合权益</li>
+              <li>搭配多平台会员，运营效率更高</li>
+            </ul>
+            <a class="hot-card__link" href="#partners">前往合作站点开通</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ======================= FAQ（FR-10，与 JSON-LD FAQPage 逐字一致） ======================= -->
+    <section class="faq" id="faq" tabindex="-1" aria-labelledby="faq-title">
+      <div class="container">
+        <h2 id="faq-title">常见问题</h2>
+        <p class="section-lead">关于站点定位、优惠、收录标准与支付售后的常见问答。</p>
+        <div class="faq-list" data-reveal>
+          <details class="faq-item" name="faq">
+            <summary>会员权益站是做什么的？</summary>
+            <div class="faq-item__answer"><p>本站是会员权益聚合导航官网，收录视频、音乐、网盘、社交媒体、流量话费等数字权益优惠信息，帮助你快速找到合适的会员开通渠道。</p></div>
+          </details>
+          <details class="faq-item" name="faq">
+            <summary>通过本站开通会员有优惠吗？</summary>
+            <div class="faq-item__answer"><p>本站收录的合作站点会不定期提供会员优惠活动，具体折扣与活动规则以各站点页面展示为准。</p></div>
+          </details>
+          <details class="faq-item" name="faq">
+            <summary>如何选择适合自己的会员套餐？</summary>
+            <div class="faq-item__answer"><p>可先在权益分类中按需求浏览，再到热门权益查看推荐组合，最后对比合作站点的活动后前往开通。</p></div>
+          </details>
+          <details class="faq-item" name="faq">
+            <summary>合作站点是怎么收录的？</summary>
+            <div class="faq-item__answer"><p>合作站点经人工核验后收录，并定期复检可用性与内容相关性，保障链接质量。</p></div>
+          </details>
+          <details class="faq-item" name="faq">
+            <summary>支付与售后在哪里完成？</summary>
+            <div class="faq-item__answer"><p>本站仅提供导航入口，会员商品的浏览、下单、支付与售后均在对应合作站点完成。</p></div>
+          </details>
+          <details class="faq-item" name="faq">
+            <summary>遇到问题如何反馈？</summary>
+            <div class="faq-item__answer"><p>可通过合作站点内的客服渠道反馈，或通过本站底部友情链接访问相关站点获取帮助。</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= 信任背书（FR-11） ======================= -->
+    <section class="trust" id="trust" tabindex="-1" aria-labelledby="trust-title">
+      <div class="container">
+        <h2 id="trust-title">用户评价与信任保障</h2>
+        <ul class="trust-badges" data-reveal>
+          <li class="trust-badge">
+            <span class="trust-badge__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
+            </span>
+            <h3 class="trust-badge__title">人工核验收录</h3>
+            <p class="trust-badge__desc">合作站点均经人工核验后收录，来源可靠。</p>
+          </li>
+          <li class="trust-badge">
+            <span class="trust-badge__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+            </span>
+            <h3 class="trust-badge__title">官方渠道直达</h3>
+            <p class="trust-badge__desc">一键跳转对应站点官网，开通流程自主掌握。</p>
+          </li>
+          <li class="trust-badge">
+            <span class="trust-badge__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 3v6h-6"/></svg>
+            </span>
+            <h3 class="trust-badge__title">定期复检更新</h3>
+            <p class="trust-badge__desc">定期复检链接可用性与内容相关性。</p>
+          </li>
+        </ul>
+        <div class="testimonials" data-reveal>
+          <figure class="testimonial">
+            <blockquote class="testimonial__quote">
+              <p>分类清晰，追剧套餐一下就找到了合适的组合，跳转开通也方便。</p>
+            </blockquote>
+            <figcaption class="testimonial__author">追剧爱好者 · 小林</figcaption>
+          </figure>
+          <figure class="testimonial">
+            <blockquote class="testimonial__quote">
+              <p>学生党预算有限，在这里对比一圈优惠再开通，省了不少。</p>
+            </blockquote>
+            <figcaption class="testimonial__author">学生用户 · 阿哲</figcaption>
+          </figure>
+          <figure class="testimonial">
+            <blockquote class="testimonial__quote">
+              <p>社媒经营的权益组合很实用，收录的站点质量也不错。</p>
+            </blockquote>
+            <figcaption class="testimonial__author">自媒体运营 · 周周</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================= 页脚（FR-12/13） ======================= -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <nav class="site-footer__links" aria-label="友情链接">
+        <h2 class="site-footer__title">友情链接</h2>
+        <ul id="footer-links" class="footer-links" data-render="footer-links">
+          <li class="footer-link"><a href="https://wcbblll.99kami.com" target="_blank" rel="noopener noreferrer">运来网络</a></li>
+          <li class="footer-link"><a href="https://wcbblll.im01.cn" target="_blank" rel="noopener noreferrer">好运权益</a></li>
+          <li class="footer-link"><a href="http://35568.qcxmt.cn" target="_blank" rel="noopener noreferrer">福来流量站</a></li>
+          <li class="footer-link"><a href="https://jdjdndn.github.io/" target="_blank" rel="noopener noreferrer">券宝</a></li>
+          <li class="footer-link"><a href="https://wcbblll.cc" target="_blank" rel="noopener noreferrer">聚合优惠</a></li>
+          <li class="footer-link"><a href="https://dlhaoka.com" target="_blank" rel="noopener noreferrer">号卡</a></li>
+        </ul>
+        <noscript>
+          <p class="footer-links-note">未启用 JavaScript 时，以上友情链接同样完整可用。</p>
+        </noscript>
+      </nav>
+      <p class="site-footer__meta">© <span id="footer-year">2026</span> 会员权益 · <a href="#top" id="back-top">回到顶部</a></p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "verification_scenario": "new-feature",
+  "reason": "全新开发的会员权益官网（纯静态站）端到端验收验证，非缺陷修复回归。verification 技能（scenario-recognition/new-feature-verification）在本环境不可用，由验证工程师按团队清单手工执行等效工作流。",
+  "task_id": 7,
+  "task_key": "phase-g-verify",
+  "created_at": "2026-10-19"
+}
