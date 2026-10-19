@@ -1,16 +1,22 @@
 # 会员权益（HuiYuan）
 
-> 会员权益聚合导航官网：收录视频、音乐、网盘、社交媒体、流量话费等数字会员权益优惠，提供分类导航、热门套餐推荐与合作站点入口。
+> 会员权益聚合导航官网：收录视频、音乐、网盘、社交媒体、流量话费等数字会员权益优惠，提供分类导航、覆盖平台清单、权益对比、省钱攻略、热门套餐推荐与合作站点入口。
 
 站点地址: https://huiyuan6.github.io/
 语言: 简体中文
+联系邮箱: 2667389861@qq.com（站点收录申请 / 友链交换 / 问题反馈）
 
 ## 核心板块
 - 权益分类: https://huiyuan6.github.io/#categories — 视频/音乐/网盘/社媒/流量话费/组合套餐六大分类
+- 覆盖平台: https://huiyuan6.github.io/#platforms — 视频/音乐/网盘/社媒/运营商/电商六大类平台清单
 - 合作站点: https://huiyuan6.github.io/#partners — 经人工核验的站群合作站点清单
-- 热门权益: https://huiyuan6.github.io/#hot — 追剧/听歌/办公云盘/社媒经营等推荐套餐
 - 使用步骤: https://huiyuan6.github.io/#steps — 四步完成权益开通
-- 常见问题: https://huiyuan6.github.io/#faq — 站点定位、优惠、收录标准、支付售后等问答
+- 热门权益: https://huiyuan6.github.io/#hot — 追剧/听歌/办公云盘/社媒经营等推荐套餐
+- 权益对比: https://huiyuan6.github.io/#compare — 六大权益类型速览对比表
+- 省钱攻略: https://huiyuan6.github.io/#guides — 学生认证/联合会员/自动续费/号卡选购/家庭共享/季度盘点
+- 常见问题: https://huiyuan6.github.io/#faq — 站点定位、优惠、收录标准、隐私、支付售后等 9 问
+- 收录动态: https://huiyuan6.github.io/#updates — 人工核验与定期复检的公开记录
+- 提交收录: https://huiyuan6.github.io/#contact — 收录标准与联系邮箱
 
 ## 合作站点
 - 运来网络: https://wcbblll.99kami.com — 视频/音乐/网盘等权益
@@ -22,4 +28,6 @@
 
 ## 说明
 - 本站为纯导航站点：商品浏览、下单、支付与售后均在合作站点完成。
+- 本站不注册、不登录、不收集个人信息。
 - 维护方式：合作站点清单由 data.js 数据文件驱动，增删条目后站点自动同步。
+- 收录申请：邮件 2667389861@qq.com，附站点名称、网址与简介，人工核验后上架。
